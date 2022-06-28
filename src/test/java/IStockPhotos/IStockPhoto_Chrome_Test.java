@@ -70,10 +70,12 @@ WebElement button = driver.findElement(By.xpath("//*[@id='register-button']"));
         driver.get(baseUrl+"sign-out");
         Assertions.assertTrue(driver.getTitle().toUpperCase().contains
                 ("Stock images".toUpperCase()));
-    }
+        }
+
 
     @Test
     @Order(6)
+
     public String generate(){
         String s = "";
         Random random = new Random();
@@ -88,7 +90,7 @@ WebElement button = driver.findElement(By.xpath("//*[@id='register-button']"));
         s+="@gmail.com";
         System.out.println(s);
         return s;
-
+        //driver.getCurrentUrl();
     }
 
 }
